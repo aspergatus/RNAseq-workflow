@@ -447,11 +447,12 @@ Once the workflow has completed, you can now use the gene count table as an inpu
 
 
 ##### Updated R script
-
+``` r
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("DESeq2")
+```
 
 ##### 7a. Install required R-libraries
 
