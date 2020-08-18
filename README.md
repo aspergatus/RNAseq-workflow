@@ -347,7 +347,13 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
     └── aligned_logs/sampleLog.final.out                  <- Log of STAR alignment rate
     └── aligned_logs/sampleLog.out                        <- Log of steps take during STAR alignment
 ```
+------------------------------------------------------------------------
 
+### Alternative Hisat2
+
+    conda install hisat2
+    hisat2-build -p 8 genome/GRCm38.p6.genome.fa hisat2/genome
+    hisat2 -f -x hisat2/genome -U results/3_rRNA/aligned/sample_aligned.fq -S result/4_aligned_sequences/sampleAligned.sam # for SE reads
 ------------------------------------------------------------------------
 
 ### Step 5. Summarizing Gene Counts with featureCounts
