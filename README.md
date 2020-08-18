@@ -353,7 +353,7 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
 
     conda install hisat2
     hisat2-build -p 8 genome/GRCm38.p6.genome.fa hisat2/genome
-    hisat2 -x hisat2/genome -U results/3_rRNA/aligned/sample_aligned.fq -S result/4_aligned_sequences/sampleAligned.sam # for SE reads
+    hisat2 -p 8 -x hisat2/genome -U results/3_rRNA/aligned/sample_aligned.fq -S result/4_aligned_sequences/sampleAligned.sam # for SE reads
     
     #Convert to BAM
     samtools view -bS result/4_aligned_sequences/sampleAligned.sam > result/4_aligned_sequences/sampleAligned.bam
