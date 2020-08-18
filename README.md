@@ -91,14 +91,14 @@ See here for a listing of genomes/annotation beyond mouse and human: <http://use
 
 ``` bash
 # Download genome fasta file into the genome/ folder
-wget -P genome/ ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_mouse/release_M12/GRCm38.p5.genome.fa.gz
+wget -P genome/ ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/GRCm38.p6.genome.fa.gz
 
 # Download annotation file into the annotation/ folder
-wget -P annotation/ ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_mouse/release_M12/gencode.vM12.annotation.gtf.gz
+wget -P annotation/ ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz
 
 # Decompress files for use with tools
-gunzip genome/GRCm38.p4.genome.fa.gz
-gunzip annotation/gencode.vM12.annotation.gtf.gz
+gunzip genome/GRCm38.p6.genome.fa.gz
+gunzip annotation/gencode.vM25.annotation.gtf.gz
 ```
 
 ##### Human (Gencode)
