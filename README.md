@@ -150,10 +150,7 @@ The first step before processing any samples is to analyze the quality of the da
     fastqc -h
 
     # Run FastQC
-    fastqc \
-    -o results/1_initial_qc/ \
-    --noextract \
-    input/sample.fastq
+    fastqc -o results/1_initial_qc/ --noextract input/sample.fastq
 
 #### Output
 
