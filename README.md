@@ -264,7 +264,7 @@ Before we can run the `sortmerna` command, we must first download and process th
     # Run SortMeRNA (~15min)
     sortmerna \
     --ref $sortmernaREF \
-    --reads results/2_trimmed_output/sample_trimmed.fq \
+    --reads results/2_trimmed_output/SRR1374921_trimmed.fq \
     --aligned results/3_rRNA/aligned/sample_aligned.fq \
     --other results/3_rRNA/filtered/sample_filtered.fq \
     --fastx \
