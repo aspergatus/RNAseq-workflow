@@ -215,7 +215,10 @@ Once we have removed low quality sequences and remove any adapter contamination,
 
 #### Installation
 
+    #install sortmerna 4.0. Does not work with script below!, no indexdb_rna as well
     #conda install -c bioconda sortmerna --yes
+    
+    #install sortmerna 2.0, including indexdb_rna
     conda install -c biocore sortmerna
 
 #### Generating Indexes
@@ -270,7 +273,7 @@ Before we can run the `sortmerna` command, we must first download and process th
     --other results/3_rRNA/filtered/sample_filtered.fq \
     --fastx \
     --log \
-    --threads 8 \
+    -a 8 \
     -v
 
     # Move logs into the correct folder
