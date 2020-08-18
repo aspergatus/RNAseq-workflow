@@ -187,13 +187,8 @@ The 2 most import parameters to select are what the minimum Phred score (1-30) a
     # Help
     trim_galore -h
 
-    # Run Trim Galore!
-    trim_galore \
-    --quality 20 \
-    --fastqc \
-    --length 25 \
-    --output_dir results/2_trimmed_output/ \
-    input/sample.fastq
+    # Run Trim Galore! 
+    trim_galore --quality 20 --fastqc --length 25 --output_dir results/2_trimmed_output/ --cores 8 input/sample.fastq
 
 #### Output
 
