@@ -356,6 +356,8 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
     hisat2 -p 8 -x hisat2/genome -U results/3_rRNA/aligned/sample_aligned.fq -S result/4_aligned_sequences/sampleAligned.sam # for SE reads
     
     #Convert to BAM
+    #Version conflict of the conda samtools --> use Ubuntu samtools package. dont resource ~/.bash_profile.
+    sudo apt get samtools
     samtools view -bS result/4_aligned_sequences/sampleAligned.sam > result/4_aligned_sequences/sampleAligned.bam
 ------------------------------------------------------------------------
 
@@ -387,8 +389,8 @@ Now that we have our .BAM alignment files, we can then proceed to try and summar
 
     # Run featureCounts on all of the samples (~10 minutes)
     featureCounts \
-    -a ../../annotation/* \
-    -o ../../results/5_final_counts/final_counts.txt \
+    -a ../../../annotation/* \
+    -o ../../../results/5_final_counts/final_counts.txt \
     -g 'gene_name' \
     -T 4 \
     $dirlist
