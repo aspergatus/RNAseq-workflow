@@ -317,7 +317,7 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
     --genomeDir star_index \
     --genomeFastaFiles genome/* \
     --sjdbGTFfile annotation/* \
-    --runThreadN 4
+    --runThreadN 8
 
 #### Command
 
@@ -328,7 +328,7 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
     STAR \
     --genomeDir star_index \
     --readFilesIn filtered/sample_filtered.fq  \
-    --runThreadN 4 \
+    --runThreadN 8 \
     --outSAMtype BAM SortedByCoordinate \
     --quantMode GeneCounts
 
