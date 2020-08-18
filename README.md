@@ -269,6 +269,7 @@ Before we can run the `sortmerna` command, we must first download and process th
     --other results/3_rRNA/filtered/sample_filtered.fq \
     --fastx \
     --log \
+    --threads 8 \
     -a 4 \
     -v
 
