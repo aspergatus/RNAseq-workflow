@@ -24,7 +24,7 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/
 bash miniconda.sh -b -f -p ~/miniconda
 
 # Add miniconda to the system path
-echo 'PATH="$HOME/miniconda/bin:$PATH' >> ~/.bash_profile
+echo 'PATH="$HOME/miniconda/bin:$PATH'" >> ~/.bash_profile
 
 # Source system file to activate miniconda
 source ~/.bash_profile
