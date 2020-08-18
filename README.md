@@ -445,6 +445,14 @@ During the qulaity filtering, rRNA removal, **STAR** alignment and gene summariz
 
 Once the workflow has completed, you can now use the gene count table as an input into **DESeq2** for statistical analysis using the R-programming language. It is highly reccomended to use **RStudio** when writing R code and generating R-related analyses. You can download **RStudio** for your system here: <https://www.rstudio.com/products/rstudio/download/>
 
+
+##### Updated R script
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("DESeq2")
+
 ##### 7a. Install required R-libraries
 
 ``` r
