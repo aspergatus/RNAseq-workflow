@@ -215,7 +215,8 @@ Once we have removed low quality sequences and remove any adapter contamination,
 
 #### Installation
 
-    conda install -c bioconda sortmerna --yes
+    #conda install -c bioconda sortmerna --yes
+    conda install -c biocore sortmerna
 
 #### Generating Indexes
 
