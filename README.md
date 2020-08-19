@@ -149,8 +149,8 @@ The first step before processing any samples is to analyze the quality of the da
     # Help
     fastqc -h
 
-    # Run FastQC
-    fastqc -o results/1_initial_qc/ --noextract input/sample.fastq
+    # Run FastQC, file can be in .gz format
+    fastqc -o results/1_initial_qc/ --noextract input/sample.fastq.gz
 
 #### Output
 
@@ -188,8 +188,9 @@ The 2 most import parameters to select are what the minimum Phred score (1-30) a
     trim_galore -h
 
     # Run Trim Galore! 
-    trim_galore --quality 20 --fastqc --length 25 --output_dir results/2_trimmed_output/ --cores 8 input/sample.fastq
-
+    #trim_galore --quality 20 --fastqc --length 25 --output_dir results/2_trimmed_output/ --cores 8 input/sample.fastq
+    trim_galore --quality 20 --fastqc --length 25 --output_dir results/2_trimmed_output/ --cores 8 input/*
+    
 #### Output
 
 ``` bash
