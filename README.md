@@ -266,7 +266,7 @@ Before we can run the `sortmerna` command, we must first download and process th
     sortmerna_db/rRNA_databases/silva-euk-18s-id95.fasta,sortmerna_db/index/silva-euk-18s-id95:\
     sortmerna_db/rRNA_databases/silva-euk-28s-id98.fasta,sortmerna_db/index/silva-euk-28s-id98
 
-    # Run SortMeRNA (~15min)
+    # Run SortMeRNA (~15min), file has to be uncompressed. it does not accept .gz
     sortmerna \
     --ref $sortmernaREF \
     --reads results/2_trimmed_output/SRR1374921_trimmed.fq \
