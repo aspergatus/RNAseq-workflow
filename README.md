@@ -311,7 +311,7 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
 
 ##### Note the two inputs for this command are the genome located in the (genome/ folder) and the annotation file located in the (annotation/ folder)
 
-    # This can take up to 30 minutes to complete
+    # This can take up to 30 minutes to complete, need 32GB RAM. 34 minutes on Ryzen 2700X
     STAR \
     --runMode genomeGenerate \
     --genomeDir star_index \
