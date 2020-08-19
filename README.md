@@ -392,7 +392,7 @@ Now that we have our .BAM alignment files, we can then proceed to try and summar
     -a ../../../annotation/* \
     -o ../../../results/5_final_counts/final_counts.txt \
     -g 'gene_name' \
-    -T 4 \
+    -T 8 \
     $dirlist
 
     # Change directory back to main folder
