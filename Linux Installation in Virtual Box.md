@@ -15,14 +15,14 @@ Run the program VBoxLinuxAdditions.run. When the program completes reboot your V
 ``` bash
 $ sudo ./VBoxLinuxAdditions.run
 ``` 
-Create a folder in Windows Host, for example "Ubuntushare"
+Create a folder in Windows Host, for example "VirtualBox_Share"
 In Virtual Box, add "Ubuntushare" into Devices->Shared Folders
 
 Mounting to Ubuntu
 ===
 ``` bash
 $ sudo mkdir ~/Desktop/windowsshare
-$ sudo mount -t vboxsf Ubuntushare ~/Desktop/windowsshare
+$ sudo mount -t vboxsf VirtualBox_Share ~/Desktop/windowsshare
 ``` 
 Install SRA Toolkit
 =
