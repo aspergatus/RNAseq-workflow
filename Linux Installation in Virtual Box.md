@@ -6,3 +6,19 @@ Install miniconda3 as described on Miniconda website
 Downgrade to python 3.7.0 (Version  3.8 causes conflict later)
 
 Sortmerna: indexdb_rna is missing in the version coming with conda. Fix for now: installing into linux by sudo apt install sortmesna
+
+Create Share Folder 
+================
+Devices->Install Guest Additions
+
+Run the program VBoxLinuxAdditions.run. When the program completes reboot your VirtualBox.
+
+$ sudo ./VBoxLinuxAdditions.run
+
+Create a folder in Windows Host, for example "Ubuntushare"
+In Virtual Box, add "Ubuntushare" into Devices->Shared Folders
+
+Mounting to Ubuntu
+===
+$ sudo mkdir ~/Desktop/windowsshare
+$ sudo mount -t vboxsf Ubuntushare ~/Desktop/windowsshare
