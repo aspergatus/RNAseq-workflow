@@ -20,5 +20,7 @@ In Virtual Box, add "Ubuntushare" into Devices->Shared Folders
 
 Mounting to Ubuntu
 ===
+
 $ sudo mkdir ~/Desktop/windowsshare
+
 $ sudo mount -t vboxsf Ubuntushare ~/Desktop/windowsshare
