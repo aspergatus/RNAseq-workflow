@@ -1,3 +1,6 @@
+Differential Gene Expression using RNA-Seq (Workflow)
+================
+
 Ubuntu Linux installation in Virtual Box
 
 Install miniconda3 as described on Miniconda website
