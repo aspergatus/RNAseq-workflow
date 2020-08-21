@@ -1,7 +1,5 @@
-Differential Gene Expression using RNA-Seq (Workflow)
-================
-
 Ubuntu Linux installation in Virtual Box
+================
 
 Install miniconda3 as described on Miniconda website
 Downgrade to python 3.7.0 (Version  3.8 causes conflict later)
