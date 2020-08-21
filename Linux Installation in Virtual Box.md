@@ -49,8 +49,8 @@ SRA Usage
 =
 Prefetch SRA (compressed format) and then convert it into Fastq
 ``` bash
-$ prefetch SRR000001
-fasterq-dump --split-files SRR11180057.sra
+$ prefetch SRR11180057
+fasterq-dump --split-files SRR11180057
 ```
 Direct download without prefetch
 ``` bash
