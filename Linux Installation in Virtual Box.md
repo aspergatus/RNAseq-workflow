@@ -45,3 +45,14 @@ Test if it works
 ``` bash
 fastq-dump --stdout SRR390728 | head -n 8
 ```
+SRA Usage
+=
+Prefetch SRA (compressed format) and then convert it into Fastq
+``` bash
+$ prefetch SRR000001
+fasterq-dump --split-files SRR11180057.sra
+```
+Direct download without prefetch
+``` bash
+fasterq-dump --split-files SRR11180057
+```
