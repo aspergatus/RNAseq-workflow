@@ -12,19 +12,18 @@ Create Share Folder
 Devices->Install Guest Additions
 
 Run the program VBoxLinuxAdditions.run. When the program completes reboot your VirtualBox.
-
+``` bash
 $ sudo ./VBoxLinuxAdditions.run
-
+``` 
 Create a folder in Windows Host, for example "Ubuntushare"
 In Virtual Box, add "Ubuntushare" into Devices->Shared Folders
 
 Mounting to Ubuntu
 ===
-
+``` bash
 $ sudo mkdir ~/Desktop/windowsshare
-
 $ sudo mount -t vboxsf Ubuntushare ~/Desktop/windowsshare
-
+``` 
 Install SRA Toolkit
 =
 
