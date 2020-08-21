@@ -56,3 +56,7 @@ Direct download without prefetch
 ``` bash
 fasterq-dump --split-files SRR11180057
 ```
+Download a list of SRA (SraAccList.txt can be downloaded from SRA search)
+```
+prefetch --option-file SraAccList.txt
+```
