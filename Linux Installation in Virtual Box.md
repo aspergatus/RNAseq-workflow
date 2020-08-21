@@ -28,18 +28,21 @@ $ sudo mount -t vboxsf Ubuntushare ~/Desktop/windowsshare
 Install SRA Toolkit
 =
 
+``` bash
 wget --output-document sratoolkit.tar.gz http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
 
 tar -vxzf sratoolkit.tar.gz
-
+```
 Append bin into PATH
 
+``` bash
 export PATH=$PATH:$PWD/sratoolkit.2.4.0-1.mac64/bin
-
+```
 Verify bin can be found
-
+``` bash
 which fastq-dump
-
+```
 Test if it works
-
+``` bash
 fastq-dump --stdout SRR390728 | head -n 8
+```
