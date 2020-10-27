@@ -150,7 +150,7 @@ The first step before processing any samples is to analyze the quality of the da
     fastqc -h
 
     # Run FastQC, file can be in .gz format
-    fastqc -o results/1_initial_qc/ --noextract input/sample.fastq.gz
+    fastqc -t 8 -o results/1_initial_qc/ --noextract input/*.fastq.gz
 
 #### Output
 
