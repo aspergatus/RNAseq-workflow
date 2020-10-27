@@ -7,6 +7,22 @@ Downgrade to python 3.7.0 (Version  3.8 causes conflict later)
 
 Sortmerna: indexdb_rna is missing in the version coming with conda. Fix for now: installing into linux by sudo apt install sortmesna
 
+
+Install SSH Server 
+================
+
+``` bash
+$ sudo apt update
+$ sudo apt install openssh-server
+``` 
+Edit /etc/ssh/sshd_config
+`#PasswordAuthentication yes` and remove the # symbol
+
+restart the ssh service
+``` bash
+$ sudo service ssh restart`
+``` 
+
 Create Share Folder 
 ================
 Devices->Install Guest Additions
