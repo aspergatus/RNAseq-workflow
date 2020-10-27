@@ -332,6 +332,14 @@ Similar to the **SortMeRNA** step, we must first generate an index of the genome
     --runThreadN 8 \
     --outSAMtype BAM SortedByCoordinate \
     --quantMode GeneCounts
+    
+    # For multiple files (not tested yet)
+    for i in $(ls result/2_trimmed_output | sed s/.fq.gz// | sort -u); do echo STAR --genomeDir star_index \
+    --readFilesIn result/2_trimmed_output/${i}_1.fq.gz\
+    --runThreadN 8 
+    --outFileNamePrefix results/4_aligned_sequences/$i. \
+    --outSAMtype BAM SortedByCoordinate \
+    --quantMode GeneCounts \
 
     # Move the BAM file into the correct folder
     mv -v results/4_aligned_sequences/sampleAligned.sortedByCoord.out.bam results/4_aligned_sequences/aligned_bam/
