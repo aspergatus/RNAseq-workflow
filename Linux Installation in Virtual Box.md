@@ -38,7 +38,7 @@ Mounting to Ubuntu
 ===
 ``` bash
 $ sudo mkdir ~/Desktop/windowsshare
-$ sudo mount -t vboxsf VirtualBox_Share ~/Desktop/windowsshare
+$ sudo mount -t vboxsf VirtualBox_Share ~/windowsshare
 ``` 
 Install SRA Toolkit
 =
